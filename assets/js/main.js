@@ -11,7 +11,7 @@ document.querySelector("button").addEventListener("click", () => {
   if (isNaN(input)) {
     const city = input;
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -25,7 +25,7 @@ document.querySelector("button").addEventListener("click", () => {
   } else {
     const zipCode = Number(input);
     fetch(
-      `http://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},DE&appid=${apiKey}`
+      `https://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},DE&appid=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
