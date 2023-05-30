@@ -20,7 +20,7 @@ section {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 h2 {
@@ -36,11 +36,27 @@ p {
   font-size: 20px;
 }
 
+.change-hide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.change-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 input {
-  width: 20vw;
-  height: 3vw;
+  width: 30vw;
+  height: 5vw;
   text-align: center;
   font-size: 30px;
+  border-radius: 10px;
 }
 
 button {
